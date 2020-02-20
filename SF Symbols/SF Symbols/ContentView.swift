@@ -11,6 +11,12 @@ import SwiftUI
 struct ContentView: View {
 	@State private var searchText = ""
 	@State private var showSearch = false
+	@ObservedObject var keyboardHandler: KeyboardFollower
+	
+	init(keyboardHandler: KeyboardFollower) {
+		self.keyboardHandler = keyboardHandler
+	}
+	
     var body: some View {
 		NavigationView {
 			VStack {
@@ -26,6 +32,7 @@ struct ContentView: View {
 				}
 				.id(UUID())
 			}
+			.padding(.bottom, keyboardHandler.keyboardHeight - 30)
 			.navigationBarTitle("SF Symbols")
 			.navigationBarItems(trailing:
 				Button(action: {
@@ -43,9 +50,9 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
-			ContentView()
+			ContentView(keyboardHandler: KeyboardFollower())
 				.preferredColorScheme(.dark)
-			ContentView()
+			ContentView(keyboardHandler: KeyboardFollower())
 				.preferredColorScheme(.light)
 		}
     }

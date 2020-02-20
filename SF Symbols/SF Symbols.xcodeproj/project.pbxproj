@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151FEF4B23FE5E7E004E87AF /* KeyboardFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FEF4A23FE5E7E004E87AF /* KeyboardFollower.swift */; };
 		155F4D5D23BCB9D1008E3D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F4D5C23BCB9D1008E3D2F /* AppDelegate.swift */; };
 		155F4D5F23BCB9D1008E3D2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F4D5E23BCB9D1008E3D2F /* SceneDelegate.swift */; };
 		155F4D6123BCB9D1008E3D2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F4D6023BCB9D1008E3D2F /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151FEF4A23FE5E7E004E87AF /* KeyboardFollower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFollower.swift; sourceTree = "<group>"; };
 		155F4D5923BCB9D1008E3D2F /* SF Symbols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SF Symbols.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		155F4D5C23BCB9D1008E3D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		155F4D5E23BCB9D1008E3D2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151FEF4C23FE5E88004E87AF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				151FEF4A23FE5E7E004E87AF /* KeyboardFollower.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		155F4D5023BCB9D1008E3D2F = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 				155F4D5E23BCB9D1008E3D2F /* SceneDelegate.swift */,
 				155F4D9723BCCD3F008E3D2F /* View */,
 				155F4D9523BCCD14008E3D2F /* Model */,
+				151FEF4C23FE5E88004E87AF /* Utils */,
 				155F4D9423BCCCF5008E3D2F /* Assets */,
 				155F4D6A23BCB9D3008E3D2F /* Info.plist */,
 				155F4D6423BCB9D3008E3D2F /* Preview Content */,
@@ -180,6 +191,7 @@
 				155F4D7123BCBA18008E3D2F /* Symbols.swift in Sources */,
 				155F4D5F23BCB9D1008E3D2F /* SceneDelegate.swift in Sources */,
 				155F4D7323BCC36B008E3D2F /* SymbolDetails.swift in Sources */,
+				151FEF4B23FE5E7E004E87AF /* KeyboardFollower.swift in Sources */,
 				155F4D6123BCB9D1008E3D2F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
